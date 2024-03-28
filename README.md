@@ -1,6 +1,6 @@
 # HMAC Generator
 
-Simple bash/zsh script that calculates the Bas64 HMAC for the given input string, algorithm and secret.
+Simple bash/zsh script that calculates the Base64 HMAC for the given input string, algorithm and secret.
 
 Example usage:
 ```
