@@ -76,7 +76,7 @@ fi
 
 printf "\nGenerate the HMAC and Bas64 HMAC of the input message:\n\n$HMAC_INPUT\n"
 
-export HMAC=$(printf "$HMAC_INPUT" | openssl $HMAC_ALGORITHM -hmac $HMAC_SECRET | cut -c16- | xxd -r -p | base64)
+export HMAC=$(printf "$HMAC_INPUT" | openssl $HMAC_ALGORITHM -hmac $HMAC_SECRET -binary | base64)
 
 printf "\nHMAC Base64: $HMAC\n"
 
